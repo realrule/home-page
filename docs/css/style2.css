@@ -1,0 +1,221 @@
+:root {
+  --color-main:#00c133;
+  --bg-gray: #f2f2f2;
+  --color-black: #333333;
+  --bold-font: 600;
+}
+
+* {
+  font-family: 微軟正黑體, "Work Sans", Arial, sans-serif;
+}
+
+a {
+  color: var(--color-black) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* header 樣式 start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .greenNav {
+    display: block!important;
+    padding: 0 !important;
+  }
+  .link {
+    border-bottom: 1px solid green;
+    margin: 5px 0px !important;
+    padding: 10px;
+  }
+  .slogan {
+    float: right;
+  }
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: var(--bold-font);
+  vertical-align: bottom;
+}
+
+.logoImg {
+  height: 3rem;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: var(--bold-font);
+}
+
+.slogan {
+  align-self: flex-end;
+}
+
+.sloganText {
+  vertical-align: bottom;
+}
+
+.greenNav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: var(--color-main);
+  text-align: center;
+}
+
+.link {
+  margin: 5px 30px;
+  font-size: 20px;
+}
+
+.active {
+  color: white !important;
+}
+
+.homeBanner {
+  height: 400px;
+  background-image:url('../images/pic01.png');
+  background-size: cover;
+  font-size: 28px;
+  color: white;
+  text-shadow: 0 0 20px rgba(0,0,0,0.7);
+  padding-top: 90px;
+}
+
+/* header 樣式 end */
+
+.footer {
+  background-color: var(--color-main);
+}
+
+/* section 共用樣式 start */
+.secCenter {
+  text-align: center;
+}
+
+.secPadding {
+  padding: 40px;
+}
+
+.secBg {
+  background-color: var(--bg-gray);
+}
+
+.secTitle {
+  font-size: 30px;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--color-main);
+  display: inline-block;
+}
+
+.secCnt {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cntSm {
+  font-size: 12px;
+}
+
+.cntLg {
+  font-size: 18px;
+}
+
+.cntLeft {
+  text-align: left;
+}
+
+.cntMargin {
+  margin: 15px 0;
+}
+
+.shapeCircle {
+  border-radius: 50%;
+}
+
+.secList {
+  list-style: none;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.secList li {
+  position: relative;
+}
+
+.secList li:before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  background-image: url(../images/checked.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  left: -22px;
+  top: 9px;
+}
+/* section 共用樣式 end */
+
+/* card 共用樣式 start */
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cardBox .card {
+  background-color: white;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 7px 10px rgba(0,0,0,0.1);
+}
+
+.cardBox .card.sm {
+  max-width: 200px;
+}
+
+.cardBox .card.lg {
+  max-width: 500px !important;
+}
+
+.cardBox .card .cardName {
+  text-align: center;
+  padding: 5px;
+  margin: 0 20px 15px 20px;
+  border-bottom: 2px solid var(--color-main);
+}
+
+.cardBox .card .cardImg {
+  width: 100%;
+}
+/* card 共用樣式 end */
+
+#goTop {
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  background-image: url(../images/up-arrow.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+}
