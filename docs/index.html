@@ -13,49 +13,91 @@
 
 <body>
   <section>
-    <header class="header">
-      <div>
-        <img class="logoImg" src="./images/logo-zh.svg" alt="">
-        <span class="logo">精密科技有限公司</span>
-        <div class="logoText">Real Rule Precision Technology Co. Ltd.</div>
-      </div>
-      <div class="slogan">
-        <span class="sloganText">觀功念恩，代人著想
-        </span>
-        <img src="./images/logo.svg" alt="" height="40">
-      </div>
-    </header>
-    <div class="greenNav">
-      <div class="link active">首頁</div>
-      <div class="link"><a href="product.html">產品介紹</a></div>
-      <div class="link "><a href="patent.html">專利技術</a></div>
-      <div class="link "><a href="http://machinecp.azurewebsites.net/index_tw ">機器商業價值</a></div>
+    <div class="secBox">
+      <header class="header">
+        <div>
+          <img class="logoImg" src="./images/logo-zh.svg" alt="">
+          <span class="logo">精密科技有限公司</span>
+          <div class="logoText">Real Rule Precision Technology Co. Ltd.</div>
+        </div>
+        <div class="slogan">
+          <span class="sloganText">觀功念恩，代人著想
+          </span>
+          <img src="./images/logo.svg" alt="" height="40">
+        </div>
+      </header>
     </div>
+    <nav id="nav" role="navigation">
+      <a href="#nav" title="Show navigation">Show navigation</a>
+      <a href="#" title="Hide navigation">Hide navigation</a>
+      <ul class="greenNav">
+        <li class="linkLevel1"><a href="index.html">首頁</a></li>
+        <li class="linkLevel1">
+          <a href="product.html" aria-haspopup="true">產品介紹</a>
+          <ul class="linkLevel2">
+            <li><a href="product.html#sec1">智慧托板</a></li>
+            <li><a href="product.html#sec2">智慧刀架</a></li>
+            <li><a href="product.html#sec3">T型定位螺帽</a></li>
+            <li><a href="product.html#sec4">智慧機上盒</a></li>
+            <li><a href="product.html#sec5">技術服務</a></li>
+          </ul>
+        </li>
+        <li class="linkLevel1">
+          <a href="patent.html" aria-haspopup="true">專利技術</a>
+          <ul class="linkLevel2">
+            <li><a href="#sec1">智慧托板</a></li>
+            <li><a href="#sec2">智慧刀架</a></li>
+            <li><a href="#sec3">T型定位螺帽</a></li>
+          </ul>
+        </li class="linkLevel1">
+        <li class="linkLevel1"><a href="http://machinecp.azurewebsites.net/index_tw">機器商業價值</a></li>
+      </ul>
+    </nav>
   </section>
 
-  <section class="secCenter ">
-    <div class="homeBanner ">
+  <section class="secCenter">
+    <div class="homeBanner">
       以創新科技、技術研發智慧化國產關鍵零組件， <br>提供智慧解決方案為目標。
     </div>
   </section>
 
   <section class="secPadding secBg ">
-    <div class="cardBox ">
-      <div class="card ">
-        <div class="cardName ">智慧托板</div>
-        <img class="cardImg " src="./images/五軸加工機托板交換-1.png " alt=" ">
-      </div>
-      <div class="card ">
-        <div class="cardName ">智慧刀具托板模組</div>
-        <img class="cardImg " src="./images/智慧刀具托板模組-2.png " alt=" ">
-      </div>
-      <div class="card ">
-        <div class="cardName ">熱伸長補償技術</div>
-        <img class="cardImg " src="./images/熱伸長補償.gif " alt=" ">
-      </div>
-      <div class="card ">
-        <div class="cardName ">動靜剛性分析</div>
-        <img class="cardImg " src="./images/動靜剛性分析.gif " alt=" ">
+    <div class="secBox">
+      <div class="cardBox">
+        <div class="card sm">
+          <a href="product.html#sec1"><div class="cardName">智慧托板</div>
+            <img class="cardImg" src="./images/五軸加工機托板交換-1.png" alt="五軸加工機托板交換-1"></a>
+        </div>
+        <div class="card sm">
+          <a href="product.html#sec2">
+            <div class="cardName">智慧刀具托板模組</div>
+            <img class="cardImg" src="./images/智慧刀具托板模組-2.png" alt="五軸加工機托板交換-2">
+          </a>
+        </div>
+        <!-- <div class="card sm">
+              <a href="product.html#sec3">
+                <div class="cardName">熱伸長補償技術</div>
+                <img class="cardImg" src="./images/熱伸長補償.gif" alt="熱伸長補償">
+              </a>
+            </div>
+            <div class="card sm">
+              <a href="product.html#sec4">
+                <div class="cardName">動靜剛性分析</div>
+                <img class="cardImg" src="./images/動靜剛性分析.gif" alt="動靜剛性分析">
+              </a>
+            </div> -->
+        <div class="card sm">
+          <a href="product.html#sec5">
+            <div class="cardName">彈性製造系統規劃</div>
+            <img class="cardImg" src="./images/彈性製造系統-1.png" alt="彈性製造系統">
+          </a>
+        </div>
+        <div class="card sm">
+          <a href="product.html#sec6">
+            <div class="cardName">T型螺帽</div>
+            <img class="cardImg" src="./images/T型螺帽-1.png" alt="T型螺帽">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -73,7 +115,7 @@
   <section class="secCenter secPadding secBg ">
     <p class="secTitle ">經營與研究團隊</p>
     <div>
-      <img class="shapeCircle " src="./images/founder.jpg " alt=" ">
+      <img class="shapeCircle " src="./images/founder.jpg " alt="林肇遠 Samuel Lin" width="140" height="140">
     </div>
     <div class="cntMargin ">
       <div class="secCnt ">
@@ -81,10 +123,22 @@
         <br> Former Vice general manager / FFG
       </div>
     </div>
-    <p class="secCnt ">以國產化工具機建置適合航太元件加工之整體智慧製造系統，<br> 並提供關鍵零組件產品與技術服務，降低產線建置成本，<br>協助台灣航太加工業者打入國際市場(市場商機每年高達百億台幣)。
-    </p>
     <p class="secCnt ">
-      合作夥伴: 虎科大、資策會
+      曾任友嘉實業集團研發中心執行副總，CNC工具機研發30年經驗，研發經營管理，<br>新產品開發商品企劃，領導團隊開工具機產品獲多項專利及研發創新競賽優等獎項。<br> 負責切削顫振基礎技術、航太加工設備聯盟、A+前瞻型高階自動化解決方案等多項業界科專計畫主持人、現任台灣智能儀器發明學會理事
+    </p>
+    <hr>
+    <div>
+      <img class="shapeCircle " src="./images/founder-2.jpg " alt="Vincent Chan" width="140" height="140">
+    </div>
+    <div class="cntMargin ">
+      <div class="secCnt ">
+        <span style="font-size: 18px; ">Vincent Chan</span>
+        <br> Aero Industry Manufacturing <br> System Collaboration Program Operation/Embedded <br> Application Software Development
+        in Silicon Valley.
+      </div>
+    </div>
+    <p class="secCnt ">
+      依據航太品質的系統與軟體工程概念，設計智慧製造核心引擎，加值建置適合航太元件加工之整體智慧製造系統
     </p>
   </section>
   <section class="secCenter secPadding footer ">

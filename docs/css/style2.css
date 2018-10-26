@@ -1,5 +1,6 @@
 :root {
   --color-main:#00c133;
+  --color-main-dark:#00a326;
   --bg-gray: #f2f2f2;
   --color-black: #333333;
   --bold-font: 600;
@@ -18,6 +19,78 @@ a:hover {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+video {
+  max-width: 100%;
+  margin: 0 10px;
+}
+
+#nav {
+  /* container */
+}
+#nav > a {
+  display: none;
+}
+#nav li {
+  position: relative;
+}
+
+/* first level */
+
+#nav > ul {
+  height: 3.75em;
+}
+#nav > ul > li {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+/* second level */
+#nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#nav li:hover ul {
+  display: block;
+}
+
+@media only screen and ( max-width: 40em ) /* 640 */{
+  #nav {
+    position: relative;
+  }
+  #nav > a {}
+  #nav:not( :target ) > a:first-of-type,
+  #nav:target > a:last-of-type {
+    display: block;
+  }
+
+  /* first level */
+
+  #nav > ul {
+    height: auto;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #nav:target > ul {
+    display: block;
+  }
+  #nav > ul > li {
+    width: 100%;
+    float: none;
+  }
+  /* second level */
+  #nav li ul {
+    position: static;
+  }
+}
+
 /* header 樣式 start */
 
 .header {
@@ -30,10 +103,6 @@ a:hover {
   .header {
     display: block;
     margin-bottom: 40px;
-  }
-  .greenNav {
-    display: block!important;
-    padding: 0 !important;
   }
   .link {
     border-bottom: 1px solid green;
@@ -68,12 +137,41 @@ a:hover {
   vertical-align: bottom;
 }
 
-.greenNav {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
+#nav {
   background-color: var(--color-main);
+}
+
+.greenNav {
+  background-color: var(--color-main);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0;
   text-align: center;
+  padding-inline-start: 0;
+}
+
+.linkLevel1 {
+  line-height: 4;
+}
+
+.linkLevel1:hover {
+  background-color: var(--color-main-dark);
+}
+
+.linkLevel2 {
+  background-color: var(--color-main-dark);
+  padding: 0;
+  width: 100%;
+  line-height: initial;
+}
+
+.linkLevel2 > li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.linkLevel2 > li:first-child {
+  border-top: 1px solid rgba(255,255,255,0.5);
 }
 
 .link {
@@ -87,7 +185,7 @@ a:hover {
 
 .homeBanner {
   height: 400px;
-  background-image:url('../images/pic01.png');
+  background-image:url('../images/banner.png');
   background-size: cover;
   font-size: 28px;
   color: white;
@@ -102,6 +200,20 @@ a:hover {
 }
 
 /* section 共用樣式 start */
+@media (min-width: 1200px){
+  .secBox {
+    width: 1170px;
+  }
+}
+@media (min-width: 992px) {
+  .secBox {
+    width: 92%;
+  }
+}
+.secBox {
+  margin: 0 auto;
+}
+
 .secCenter {
   text-align: center;
 }
@@ -151,6 +263,8 @@ a:hover {
   list-style: none;
   line-height: 2;
   margin-top: 10px;
+  display: inline-block;
+  margin: auto;
 }
 
 .secList li {
