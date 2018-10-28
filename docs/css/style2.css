@@ -213,12 +213,22 @@ video {
 
 .homeBanner {
   height: 400px;
-  background-image:url('../images/banner.png');
+  background-image:url('../images/banner.jpg');
   background-size: cover;
   font-size: 28px;
   color: white;
   text-shadow: 0 0 20px rgba(0,0,0,0.7);
   padding-top: 90px;
+  position: relative;
+}
+
+.homeBanner .credit {
+  text-shadow: none;
+  color: #777;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  right:0;
 }
 
 /* header 樣式 end */
