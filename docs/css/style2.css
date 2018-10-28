@@ -11,7 +11,7 @@
 }
 
 a {
-  color: var(--color-black) !important;
+  color: white !important;
   text-decoration: none !important;
 }
 
@@ -59,11 +59,28 @@ video {
   display: block;
 }
 
+.mHeader {
+  display: none;
+}
+
 @media only screen and ( max-width: 40em ) /* 640 */{
+  .header {
+    display: none !important;
+  }
   #nav {
     position: relative;
+    height: 55px;
+    padding-top: 10px;
+    background-color: white !important;
   }
-  #nav > a {}
+  #nav > a {
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin: 0 12px 10px 12px;
+  }
   #nav:not( :target ) > a:first-of-type,
   #nav:target > a:last-of-type {
     display: block;
@@ -77,6 +94,8 @@ video {
     position: absolute;
     left: 0;
     right: 0;
+    top:55px;
+    border-top: 1px solid #dddddd;
   }
   #nav:target > ul {
     display: block;
@@ -84,10 +103,15 @@ video {
   #nav > ul > li {
     width: 100%;
     float: none;
+    border-bottom: 1px solid #dddddd;
   }
   /* second level */
   #nav li ul {
     position: static;
+  }
+  .mHeader {
+    display: initial !important;
+    margin-right: 10px;
   }
 }
 
@@ -122,6 +146,7 @@ video {
 
 .logoImg {
   height: 3rem;
+  vertical-align: baseline;
 }
 
 .logoText {
@@ -163,6 +188,7 @@ video {
   padding: 0;
   width: 100%;
   line-height: initial;
+  font-weight: 300;
 }
 
 .linkLevel2 > li {
@@ -172,15 +198,6 @@ video {
 
 .linkLevel2 > li:first-child {
   border-top: 1px solid rgba(255,255,255,0.5);
-}
-
-.link {
-  margin: 5px 30px;
-  font-size: 20px;
-}
-
-.active {
-  color: white !important;
 }
 
 .homeBanner {
@@ -300,8 +317,16 @@ video {
   box-shadow: 2px 7px 10px rgba(0,0,0,0.1);
 }
 
+.card a {
+  color: var(--color-black) !important;
+}
+
 .cardBox .card.sm {
   max-width: 200px;
+}
+
+.cardBox .card.md {
+  max-width: 300px;
 }
 
 .cardBox .card.lg {

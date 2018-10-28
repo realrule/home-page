@@ -25,12 +25,35 @@
         <img src="./images/logo.svg" alt="" height="40">
       </div>
     </header>
-    <div class="greenNav">
-      <div class="link"><a href="index.html">首頁</a></div>
-      <div class="link"><a href="product.html">產品介紹</a></div>
-      <div class="link active">專利技術</div>
-      <div class="link"><a href="http://machinecp.azurewebsites.net/index_tw">機器商業價值</a></div>
-    </div>
+    <nav id="nav" role="navigation">
+      <a href="#nav" title="Show navigation">Show navigation</a>
+      <a href="#" title="Hide navigation">Hide navigation</a>
+      <ul class="greenNav">
+        <li class="linkLevel1"><a href="index.html">首頁</a></li>
+        <li class="linkLevel1">
+          <a href="product.html" aria-haspopup="true">產品介紹</a>
+          <ul class="linkLevel2">
+            <li><a href="product.html#sec1">智慧托板</a></li>
+            <li><a href="product.html#sec2">智慧刀架</a></li>
+            <li><a href="product.html#sec3">T型定位螺帽</a></li>
+            <li><a href="product.html#sec4">彈性製造系統規劃</a></li>
+            <!-- <li><a href="product.html#sec4">智慧機上盒</a></li> -->
+            <li><a href="product.html#sec5">技術服務</a></li>
+            <li><a href="product.html#sec6">熱伸長補償技術</a></li>
+            <li><a href="product.html#sec7">動靜剛性分析</a></li>
+          </ul>
+        </li>
+        <li class="linkLevel1">
+          <a href="patent.html" aria-haspopup="true">專利技術</a>
+          <ul class="linkLevel2">
+            <li><a href="#sec1">智慧托板</a></li>
+            <li><a href="#sec2">智慧刀架</a></li>
+            <li><a href="#sec3">T型定位螺帽</a></li>
+          </ul>
+        </li class="linkLevel1">
+        <li class="linkLevel1"><a href="http://machinecp.azurewebsites.net/index_tw">機器商業價值</a></li>
+      </ul>
+    </nav>
   </section>
   <div style="height: 700px; text-align: center; padding-top: 100px;">
     <h1 style="color: #ddd;">頁面規劃中</h1>
