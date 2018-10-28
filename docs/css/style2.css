@@ -63,15 +63,23 @@ video {
   display: none;
 }
 
-@media only screen and ( max-width: 40em ) /* 640 */{
+/* 手機版導覽列 640 */
+@media only screen and ( max-width: 40em ) {
   .header {
     display: none !important;
   }
+  .logoImg {
+    height: 2.5rem !important;
+  }
+  .logo {
+    font-size: 2.2rem !important;
+  }
   #nav {
     position: relative;
-    height: 55px;
+    height: 50px;
     padding-top: 10px;
     background-color: white !important;
+    border-bottom: 1px solid var(--color-main);
   }
   #nav > a {
     background-image: url(../images/menu.png);
@@ -85,6 +93,9 @@ video {
   #nav:target > a:last-of-type {
     display: block;
   }
+  .greenNav {
+    background-color: rgba(0, 193, 51, 0.9) !important;
+  }
 
   /* first level */
 
@@ -94,7 +105,7 @@ video {
     position: absolute;
     left: 0;
     right: 0;
-    top:55px;
+    top:50px;
     border-top: 1px solid #dddddd;
   }
   #nav:target > ul {
