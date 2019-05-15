@@ -273,6 +273,22 @@ video {
   display: inline-block;
 }
 
+.secSubtitle {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.secSubtitle:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 3px;
+  height: 24px;
+  top: 3px;
+  right: 8px;
+  background-color: var(--color-main);
+}
+
 .secCnt {
   font-size: 16px;
   line-height: 1.5;
@@ -329,6 +345,7 @@ video {
   flex-wrap: wrap;
   justify-content: center;
   margin: 10px 0;
+  align-items: center;
 }
 
 .cardBox .card {
@@ -345,6 +362,7 @@ video {
 
 .cardBox .card.sm {
   max-width: 200px;
+  min-height: 230px;
 }
 
 .cardBox .card.md {
@@ -353,6 +371,10 @@ video {
 
 .cardBox .card.lg {
   max-width: 500px !important;
+}
+
+.cardBox .card.full {
+  max-width: 90% !important;
 }
 
 .cardBox .card .cardName {
