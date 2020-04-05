@@ -6,6 +6,10 @@
   --bold-font: 600;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 微軟正黑體, "Work Sans", Arial, sans-serif;
 }
@@ -26,6 +30,25 @@ li {
 video {
   max-width: 100%;
   margin: 0 10px;
+}
+
+table > tbody > tr {
+  border: 1px solid #333;
+}
+
+table > tbody > tr > td {
+  border: 1px solid #333;
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+table > tbody > tr > td.highlight {
+  background-color: aliceblue;
+}
+
+img.full {
+  width: 100%;
 }
 
 #nav {
@@ -261,7 +284,7 @@ video {
   padding: 40px;
 }
 
-.secBg {
+.secBg:nth-child(odd), .secColorBg {
   background-color: var(--bg-gray);
 }
 
@@ -324,6 +347,10 @@ video {
 
 .secList li {
   position: relative;
+}
+
+.secList.align-left {
+  margin-left: 10px;
 }
 
 .secList li:before {
@@ -389,7 +416,7 @@ video {
 }
 /* card 共用樣式 end */
 
-#goTop {
+#scrollToTop {
   position: fixed;
   right: 15px;
   bottom: 100px;

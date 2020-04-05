@@ -1,9 +1,10 @@
 extends ../partial/layout.pug
 
 block mainContent
+  #scrollToTop(onClick="window.scrollTo(0,0)")
   section.secPadding.secBg
     include ../partial/productList.pug
-  section.secCenter.secPadding#sec1
+  section.secCenter.secPadding.secBg#sec1
     .secBox
       h2.secTitle 智慧工件托板模組
       p.secCnt.cntLg
@@ -15,7 +16,7 @@ block mainContent
         img.cardImg(src='./images/五軸加工機托板交換-1.png' alt='五軸加工機托板交換-1')
       .card.lg  
         img.cardImg(src='./images/五軸加工機托板交換-2.png' alt='五軸加工機托板交換-2')
-  section.secCenter.secPadding
+  section.secCenter.secPadding.secBg
     .secBox
       h2.secTitle 智慧托板交換模組
       h3.secSubtitle 智慧工件托板模組(專利 M550673)
@@ -91,7 +92,7 @@ block mainContent
         .card.lg
           img.cardImg(src='./images/智慧刀具托板模組-2.png' alt='智慧刀具托板模組')
         ul.secList.cntLeft.cntLg(style="margin:20px 0")
-          li 中華民國發明專利1684488
+          li 中華民國發明專利I684488
           li 提供現有加工產線改造自動化中央刀倉解決方案 
           li 依客戶加工機規格設計，提供智慧換刀軟體 
           li BT/CAT,#30/#40/#50立臥式，最多可裝30把刀 
@@ -99,7 +100,7 @@ block mainContent
           li 具大徑刀取放刀套 
           li 具有無刀具感測 
           li 具資料傳輸介面，結合刀具壽命與中央刀倉管理
-  section.secCenter.secPadding#sec3
+  section.secCenter.secPadding.secBg#sec3
     .secBox
       h2.secTitle T型螺帽
       .cardBox
@@ -115,6 +116,195 @@ block mainContent
         li 具精密導引孔，可依夾具需求設計直接配置治具導引孔不需額外裝置治具板
         li 也可提供一般T型螺帽夾持功能
         li 提供客製化設計
+  section.secCenter.secPadding.secBg#sec7
+    h2.secTitle TM 協作型機器人
+    .secBox
+      img.full(src='./images/TMCA.jpg' alt='TMCA' style="margin-bottom:10px")
+      img.full(src='./images/TM-1.jpg' alt='TM-1' style="margin-bottom:10px")
+      img.full(src='./images/TM-2.jpg' alt='TM-2' style="margin-bottom:10px")
+      img.full(src='./images/TM-3.jpg' alt='TM-3' style="margin-bottom:10px")
+  section.secCenter.secPadding.secBg#sec6
+    .secBox
+      h2.secTitle 工業4.0專用  非接觸式雷射量刀器
+      .cardBox
+        .card.lg
+          img.cardImg(src='./images/雷射量刀器-1.png' alt='雷射量刀器-1')
+        ul.secList.align-left.cntLeft.cntLg
+          li.secSubtitle 功能
+          li 主軸偏擺量測
+          li 兩軸背隙量測分析
+          li 加工機暖機與熱變位分析
+          li 可同時運用於超音波工具機如：超音波振幅量測與回授)
+      .cardBox
+        .col-md-6.card.lg
+          img.cardImg(src='./images/雷射量刀器-2.png' alt='雷射量刀器-2')
+        ul.col-md-6.secList.align-left.cntLeft.cntLg  
+          li.secSubtitle 優勢
+          li 專用程式設定、簡單易上手
+          li 穩定加工製程、量測時間短
+          li 非接觸不易損壞微小刀具
+          li 提供LCD數值顯示較易判斷
+          li 提供電腦軟體，易數據分析
+          li 刀緣法+差動法：
+            br
+            | 提高超音波振幅的線性度。
+            br
+            | 可廣泛適用於不同直徑的刀具超音波振幅量測。
+          li 協助自動追頻即時調整振幅與精準控制
+            br
+            | 共振頻率會隨著加工時間與環境變動而偏移，超音波量刀器自動量測振幅，穩定加工製程。
+          li 優於傳統超音波加工只能使用功率控制
+            br
+            | 解決傳統超音波加工只能用功率控制，卻無法得到真正振幅數值，藉由準確控制超音波振幅數值，可穩定超音波加工製程。
+          li 智能與全自動量產產品加工方式
+            br
+            | 實現自動換刀與全自動化的加工過不同的刀子與加工方式(如銑槽、鑽孔、磨面) 都需要不同的加工條件(振幅)，藉由超音波量刀器可以確認振幅。
+          li 建立加工參數刀具資料庫
+            br
+            | 刀具參數管理與壽命的監測，協助使用者建立刀具加工參數與壽命管理資料庫。
+      .cardBox
+        .secSubtitle 規格
+        table
+          tbody
+            tr
+              td(colSpan=2) 型號
+              td UTC60
+            tr
+              td(colSpan=2) 刀具大小
+              td 依客戶需求設計
+            tr
+              td(colSpan=2) 重複性
+              td <1µm
+            tr
+              td(colSpan=2) 工作範圍
+              td 60mm
+            tr
+              td(colSpan=2) 量測振幅範圍
+              td ±10µm or ±25µm
+            tr
+              td(colSpan=2) 超音波振幅誤差
+              td ±0.5µm
+            tr
+              td(colSpan=2) 超音波解析度
+              td <0.5µm
+            tr 
+              td(colSpan=2) 系統頻寬
+              td 60kHz(最高可達150kHz)
+            tr
+              td(colSpan=2) 供電電壓(至介面)
+              td 24 Vdc
+            tr
+              td(colSpan=2) 供電電流(至介面)
+              td 0.2 A
+            tr
+              td(colSpan=2) 供電保護
+              td 裝設二極體，限制防止工程失誤
+            tr
+              td(rowSpan=3) 纜線(至介面)
+              td 規格
+              td UL2464#26，8芯雙隔離線
+            tr 
+              td 長度
+              td 5 m
+            tr
+              td 電氣接線
+              td 
+                ul
+                  li 量刀器端: 8PIN IP68防水接頭
+                  li 訊號盒端: MDR 26P接頭
+            tr
+              td(colSpan=2) 儀器氣源供應
+              td 硬體接線系統：Ø4.0 mm × 5.0 m氣壓管，使用1.0至5.0 bar。供應此產品的氣源必須符合 BS ISO 8573-1 的要 求：2010 等級 1.7.
+            tr
+              td(colSpan=2) 刀刃吹屑氣源供應
+              td Ø6.0 mm 氣壓管 × 最大 5.0 m, 6.0 bar。 供應刀刃吹屑的氣源必須符合 BS-ISO 8573-1 的要求：2010 等級 2.9.4.
+            tr
+              td(colSpan=2) 雷射類型
+              td class 2雷射產品。功率1 mw、波長 650nm。警告：雷射輻射。切勿直視輻射光束。
+            tr
+              td(colSpan=2) 防水防塵保護
+              td IPX8(吹氣)
+            tr
+              td(colSpan=2) 儲存溫度
+              td +5 °C 至 +55 °C
+      div(style="position:relative;overflow:scroll;")  
+        .secSubtitle 各家廠牌規格比較
+        table
+          tbody
+            tr
+              td
+              td.highlight LATC – UTC60
+              td Renishaw NC4 – F115
+              td Marposs – 75P
+              td HEXAGON M&H – LTS35
+              td BLUM – LC50 (150mm)
+            tr
+              td 可量測最小刀徑 ø
+              td.highlight 依客戶需求設計
+              td 30μm
+              td 30μm
+              td 30μm
+              td 15μm
+            tr
+              td 雷射光類型
+              td.highlight 可見紅光650 nm<1mW 
+              td 可見紅光670 nm<1mW
+              td 可見紅光670 nm<1mW
+              td 可見紅光650 nm<1mW
+              td 可見紅光630-700 nm<1mW
+
+            tr
+              td 超音波振幅頻寬 
+              td.highlight 150kHz
+              td N/A
+              td N/A
+              td N/A
+              td N/A
+            tr
+              td 光學裝置保護
+              td.highlight 機械式氣閘、正壓吹氣系統、旋轉式防蓋
+              td 機械式氣閘、正壓吹氣系統
+              td 機械式氣閘、正壓吹氣系統
+              td 機械式氣閘、正壓吹氣系統
+              td 機械式氣閘、正壓吹氣系統
+            tr
+              td 提供量測數據資料與電腦軟體分析
+              td.highlight Yes
+              td No
+              td No
+              td No
+              td No
+            tr
+              td 支援AIOT
+              td.highlight Yes
+              td No
+              td No
+              td No
+              td No
+            tr
+              td 防護等級  
+              td.highlight IPX8 (吹氣)
+              td IPX8(吹氣)
+              td IP67
+              td IP68
+              td IP68
+      .cardBox
+        .secSubtitle 超音波振幅量刀器需求點為何
+        ul.secList.cntLg.cntLeft
+          li
+            | 硬脆材料需求提升
+            br
+            | 因應工具機市場的改變，傳統加工進展到3C、光電、生醫與航太…等產業，硬脆材料加工需求大幅提升，其中超音波加工對於硬脆材料具有極佳的成果。
+          li
+            | 提升加工品質、效率與穩定加工製程
+            br
+            | 超音波振幅的變化為重要參數之一，利用精準掌控超音波振幅並建立加工參數刀具資料庫，以達提升加工品質、效率與穩定加工製程。
+          li
+            | 減少刀具磨耗
+            br
+            | 利用超音波振幅所建立起的加工參數刀具資料庫，可解決加工負載變動、刀具質量不同而造成的阻抗改變、振幅衰滅等問題，使得刀具振幅維持在最佳狀態，更可以減少刀具磨耗。
+      .cardBox
+        img.cardImg(src='./images/雷射量刀器-3.png' alt='雷射量刀器-3' style="width:100%")
   section.secCenter.secPadding.secBg#sec4
     .secBox
       h2.secTitle 彈性製造系統規劃
@@ -144,9 +334,9 @@ block mainContent
         .card.lg
           img.cardImg(src='./images/彈性製造系統_航太-3.png' alt='彈性製造系統_航太-3')
       video(width='640' height='480' controls)
-        source(src="./videos/彈性製造系統_航太.mp4" type='video/mp4') 
+        source(src="./videos/晟田案.mp4" type='video/mp4') 
         | Your browser does not support the video tag.  
-  section.secCenter.secPadding#sec5
+  section.secCenter.secPadding.secBg#sec5
     .secBox
       h2.secTitle 技術服務
       .cardBox
