@@ -1,0 +1,8 @@
+.Members-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Members-member-wrapper {
+  width: 30%;
+}
